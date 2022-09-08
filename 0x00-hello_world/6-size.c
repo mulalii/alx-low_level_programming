@@ -1,4 +1,4 @@
-#include <stdio.>
+#include <stdio.h>
 /**
 * main - main block
 * Description: find size of data-types
