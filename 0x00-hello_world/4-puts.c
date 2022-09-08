@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
 * main - main block
-*use puts to print message
+*Description: prints text using puts
+*Return: 0
 */
 int main(void)
 {
