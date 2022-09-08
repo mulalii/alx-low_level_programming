@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-* main - main block
+* main - main entry
 * Description: find size of data-types
 * return: 0
 */
