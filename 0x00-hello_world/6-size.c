@@ -4,7 +4,7 @@
 * Description: find size of data-types
 * return: 0
 */
-int main(void)
+int main(void);
 {
 	char c;
 	int i;
