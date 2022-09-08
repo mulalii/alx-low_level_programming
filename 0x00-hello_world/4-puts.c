@@ -1,9 +1,13 @@
-#!/bin/bash
 #include <stdio.h>
 
-int main() {
-	puts(""/Programming is like building a multilingual puzzle\n") 
+/*use puts to print message*/
+/*return 0*/
 
-		return 0
+int main(void) {
+
+	puts("\"Programming is like building a multilingual puzzle"); 
+
+		return 0 ;
+
 }
 		
