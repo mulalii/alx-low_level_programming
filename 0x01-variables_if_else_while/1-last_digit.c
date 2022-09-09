@@ -15,7 +15,7 @@ int main(void)
 
 	if (n >= 5)
 	{
-		printf("%d and is greater than 5\n", n+3);
+		printf("%d and is greater than 5\n", n == 8);
 	}
 	else if (n == 0)
 	{
