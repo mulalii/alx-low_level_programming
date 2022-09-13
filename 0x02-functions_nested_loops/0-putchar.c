@@ -7,8 +7,14 @@
  */
 int main(void)
 {
-	int a;
+	char text[] = '_putchar';
+	int w = 0;
 
-	printf("_putchar\n");
-	return (0);
+	while (text[w] != '\0')
+	{
+		_putchar(text[w]);
+		w++;
+	}
+	_putchar('\n')
+		return (0);
 }
