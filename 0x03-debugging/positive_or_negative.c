@@ -7,13 +7,12 @@
  * and print the last digit of the number stored in the variable n
  * Return: Always (success)
  */
-int main(void)
+void positive_or_negative(int i))
 {
 	int n;
 
 	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-
+	n = i;
 	if (n > 0)
 	printf("%d is positive\n", n);
 	if (n == 0)
@@ -22,5 +21,15 @@ int main(void)
 {
 	printf("%d is negative\n", n);
 }
-return (0);
+/**
+ * main - debugging example
+ * Return: 0
+ */
+int main(void)
+{
+	int i;
+
+	i = 0;
+	positive_or_negative(i);
+	return (0);
 }
