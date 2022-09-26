@@ -1,19 +1,22 @@
 #include "main.h"
 /**
- * _strchr - locate character in a string
- * @s: sring variable
- * @c: character variable
- */
+*_strchr - Returns a pointer to the first occurrence
+*of the character c in the string s, or NULL if the
+*character is not found
+*
+*@s:string targeted
+*@c:character targeted
+*
+*Return: returns pointer to first occcurence of c
+*/
 char *_strchr(char *s, char c)
 {
-	int v;
+	int i;
 
-	for (v = 0; s[v] < '\0'; v++)
-	{
-		if (s[v] == c)
-		{
-			return(s + v);
-		}
-	}
-	return(0);
+	for (i = 0; (s[i] != c) && (s[i] != '\0'); i++)
+		;
+	if (s[i] == c)
+		return (s + i);
+	else
+		return (NULL);
 }
