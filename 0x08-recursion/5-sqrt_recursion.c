@@ -1,33 +1,32 @@
 #include "main.h"
-#include <stdio.h>
-/**
-* is_prime_number - returns true if the number is prime
-*@n: the number to check
-*
-*Return: true if the number is prime
-*/
-int is_prime_number(int n)
-{
-	int start = n / 2;
 
-	if (n <= 1)
-		return (0);
-	return (is_prime(n, start));
+/**
+* _sqrt_recursion - returns the natural square root of a number
+* @n: number to be used
+*
+* Return: the square root of n
+*/
+
+int _sqrt_recursion(int n)
+{
+	if (n == 0 || n == 1)
+		return (n);
+	return (_sqrt(0, n));
 }
 
 /**
-* is_prime - returns the 1 if n is prime
-* @n: number to be checked
-* @start: number to start checking from
-*
-* Return: 1 if n is prime, 0 otherwise
-*/
+ * _sqrt - returns the square root of a number
+ * @n: test number
+ * @x: squared number
+ *
+ * Return: the square root of n
+ */
 
-int is_prime(int n, int start)
+int _sqrt(int n, int x)
 {
-	if (start <= 1)
-		return (1);
-	else if (n % start == 0)
-		return (0);
-	return (is_prime(n, start - 1));
+	if (n > x / 2)
+		return (-1);
+	else if (n * n == x)
+		return (n);
+	return (_sqrt(n + 1, x));
 }
