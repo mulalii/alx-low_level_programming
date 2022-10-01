@@ -1,15 +1,17 @@
+#include "main.h"
 #include <stdio.h>
 
 /**
-* main - prints the number of arguments
-*@argc: number of arguments
-*@argv: array of arguments
-*Return: the number of arguments
+* main - prints its name follwoed by a newline
+* @argc: number of arguments
+* @argv: the vector that hold the arguments
+*
+* Description: prints the current directory and the name like ./name
+* Return: returns the name.
 */
 
-int main(int argc, char __attribute__((__unused__)) *argv[])
+int main(int argc, char **argv)
 {
-	printf("%d\n", argc - 1);
-
+	printf("%s\n", argv[argc - 1]);
 	return (0);
 }
