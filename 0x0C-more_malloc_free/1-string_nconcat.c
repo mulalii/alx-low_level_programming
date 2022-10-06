@@ -1,6 +1,7 @@
 #include <stdlib>
 #include "main.h"
 /**
+ * *string_nconcat - cat two strings
  * malloc_checked - allocates memory using malloc
  * @s1: string to append to
  * @s2: string to concatenate from
